@@ -1,0 +1,68 @@
+/* remind myself !important is needed to override bootstrap's default styles */
+/* ---1. global settings--- */
+/* format of navbar items ---*/
+.navbar,
+.dropdown-menu {
+    background-color: #E6DA72 !important; /* Set the navbar background color */
+    border: none !important;              /* Removes the default border */
+    border-radius: 0 !important;          /* Keeps the sharp luxury look */
+    padding-top: 0 !important;           /* Adjust these numbers to change navbar height */
+    padding-bottom: 0 !important;
+}
+
+.navbar-nav .nav-link, 
+.navbar-nav .dropbtn,
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #000 !important; /* Forces the text to be black */
+    font-family:  "Bungee", sans-serif !important;
+    font-weight: normal !important;
+    text-transform: uppercase; /* Optional: makes it look very clean and uniform */
+    letter-spacing: 1px;       /* Optional: adds a bit of professional spacing */
+    padding-top: 15px !important;    /* Adjust these numbers to change navbar height */
+    padding-bottom: 15px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    transition: all 0.3s ease;      /* Makes the color change smooth */
+}
+/* the color is not defined so 
+.navbar-nav .dropdown-menu .dropdown-item{
+    background-color: #E6DA72 !important;
+}
+/* format of dropdown menu ---*/
+.dropdown-menu .dropdown-item {
+    background-color: #E6DA72 !important; 
+}
+/*--- format of hamburger menu ---*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+/* --- 2. hover state for regular links and dropdown items --- */
+.navbar-nav .nav-link:hover, 
+.navbar-nav .dropbtn:hover,
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+
+/* ---3. Specifically target the sale link --- */
+.nav-link.nav-sale {
+    color: red !important;
+}
+
+.nav-link.nav-sale:hover {
+    color: #fff !important;         /* Text turns white --- */
+    background-color: red !important; /* Background turns red */
+}
+
+
+/*--- 4. Action for product --- */
+@media (min-width: 992px) {
+    /* Trigger the menu on hover */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Prevents a gap so the mouse can slide down */
+    }
+}
