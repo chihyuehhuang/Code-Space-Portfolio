@@ -53,7 +53,7 @@ body {
 .content-wrapper .background {
       margin-top: 0px;
       padding-top:0px;
-      /* background: url("../img/index_cherish.jpg") no-repeat;
+      /* background: url("img/index_cherish.jpg") no-repeat;
        */
       background: url("https://github.com/chihyuehhuang/Code-Space-Portfolio/blob/main/img/index_cherish.jpg") no-repeat;
       background-position: center;
@@ -67,7 +67,7 @@ body {
 .content-wrapper .background-outlet {
       margin-top: 0px;
       padding-top:0px;
-      background: url("../img/bk_discount.PNG") no-repeat;
+      background: url("img/bk_discount.PNG") no-repeat;
       background-position: center;
       background-size: cover;
       padding-top: 50px;
@@ -77,7 +77,7 @@ body {
 .content-wrapper .background-gent {
       margin-top: 0px;
       padding-top:0px;
-      background: url("../img/bk_gent.PNG") no-repeat;
+      background: url("img/bk_gent.PNG") no-repeat;
       background-position: center;
       background-size: cover;
       padding-top: 50px;
@@ -87,7 +87,7 @@ body {
 .content-wrapper .background-lady {
       margin-top: 0px;
       padding-top:0px;
-      background: url("../img/bk_lady.PNG") no-repeat;
+      background: url("img/bk_lady.PNG") no-repeat;
       background-position: center;
       background-size: cover;
       padding-top: 50px;
@@ -97,7 +97,7 @@ body {
 .content-wrapper .background-login {
       margin-top: 0px;
       padding-top:0px;
-      background: url("../img/bk_login.PNG") no-repeat;
+      background: url("img/bk_login.PNG") no-repeat;
       background-position: center;
       background-size: cover;
       padding-top: 50px;
@@ -107,7 +107,7 @@ body {
 .content-wrapper .background-register {
       margin-top: 0px;
       padding-top:0px;
-      background: url("../img/bk_login.PNG") no-repeat;
+      background: url("img/bk_login.PNG") no-repeat;
       background-position: center;
       background-size: cover;
       padding-top: 50px;
@@ -117,7 +117,7 @@ body {
 .content-wrapper .background-about {
       margin-top: 0px;
       padding-top:0px;
-      background: url("../img/bk_about.PNG") no-repeat;
+      background: url("img/bk_about.PNG") no-repeat;
       background-position: center;
       background-size: cover;
       padding-top: 150px;
@@ -129,7 +129,7 @@ body {
 .content-wrapper .background-contact {
       margin-top: 0px;
       padding-top:0px;
-      background: url("../img/bk_contact.PNG") no-repeat;
+      background: url("img/bk_contact.PNG") no-repeat;
       background-position: center;
       background-size: cover;
       padding-top: 50px;
