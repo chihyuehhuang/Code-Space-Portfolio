@@ -11,23 +11,74 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Huninn&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <!-- Header & Navbar -->
-    <div id="header"></div>
-    <div id="navbar"></div>
-
-    <h3 class="text-center mt-5" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Welcome to MK Time! <br> We cherish your time like yourself.</h3>
+    <!-- My JS -->
     <script src="js_src.js"></script>
-    <!-- Main -->
 
+    <!-- Header & Navbar -->
+     <div class="fixed-top showdow-sm">    
+        <div id="header"></div>
+        <div id="navbar"></div>
+    </div>
+
+
+    <!-- Main -->
+    <main class="content-wrapper">
+        <div class="background"> 
+            <div class="intro">
+            <h2 class="text-center mt-3" style="font-weight: bold; font-family: 'Petit Formal Script', cursive;">Welcome to MK Time! <br></h2>
+
+            <p class="text-center">We cherish your time like yourself.</p>
+            <p class="text-center">Time is money and we are here to help you make the most of it. 
+                <br> All our collection is designed to help you make the most of every second with 3 year warranty.</p>
+            <p class="text-center">Every watch is crafted locally with precision and style.</p>
+            </div>
+        </div>
+        <!-- best sellers -->    
+        <div class="d-flex justify-content-center my-4">
+            <h4 class="text-center" style="font-weight: bold; font-family: 'Petit Formal Script', cursive;">OUR BESTSELLERS</h4>
+        </div>
+
+        <div class="d-flex justify-content-center my-4">
+            <div class="card-group">
+                <div class="card product-card mx-4" style="width: 20rem;">
+                    <img src="/img/men_1_portrait.png" class="card-cover" alt="Vanguard portrait">
+                    <div class="card-reveal">
+                        <img src="/img/men_1.png" class="card-img-top" alt="Vanguard">
+                        <div class="card-body">
+                            <h5 class="card-title">Vanguard</h5>
+                            <p class="card-text">Classic stainless design, calm, mature and sophisticated.</p>
+                            <h2 class="price">£899.99</h2>
+                            <a href="#" class="btn btn-add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-card mx-4" style="width: 20rem;">
+                    <img src="/img/women_3_portrait.png" class="card-cover" alt="Luna portrait">
+                    <div class="card-reveal">
+                        <img src="/img/women_3.png" class="card-img-top" alt="Luna">
+                        <div class="card-body">
+                            <h5 class="card-title">Luna</h5>
+                            <p class="card-text">The shining crystal with polished finish, showing off its elegance.</p>
+                            <h2 class="price">£1,099.99</h2>
+                            <a href="#" class="btn btn-add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
     <!-- Footer -->
-    <div id="footer"></div>
+    <div>
+        <div id="footer"></div>
+    </div>
 
 </body>
 </html>

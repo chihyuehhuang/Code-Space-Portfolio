@@ -1,3 +1,250 @@
+/*font*/
+p{
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.form-control{  
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form-label {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.link-normal {
+    font-family: "Noto Serif", serif;
+    color:#8d7300
+}
+.link-normal:hover {
+    font-family: "Noto Serif", serif;
+    color:#000;
+    text-decoration:none;
+
+}
+
+/* --- Global Styles --- */
+body {
+    background-color: #f8eedc !important;
+}
+
+.fixed-top {
+    z-index: 1030;
+    background-color: #E6DA72; /* Match your navbar color to prevent 'gaps' */
+}
+
+.content-wrapper {
+    padding-top: 225px;
+}
+
+.intro  {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 200px;
+      padding-right: 200px;
+      background-color: rgba(255, 255, 255, 0.6);
+}
+
+.content-wrapper .background {
+      margin-top: 0px;
+      padding-top:0px;
+      background: url("/img/index_cherish.jpg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-top: 150px;
+      padding-bottom: 150px;
+      background-color:rgba(255,255,255,0.4);
+      background-blend-mode: lighten;
+}
+
+.content-wrapper .background-outlet {
+      margin-top: 0px;
+      padding-top:0px;
+      background: url("/img/bk_discount.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+
+.content-wrapper .background-gent {
+      margin-top: 0px;
+      padding-top:0px;
+      background: url("/img/bk_gent.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+
+.content-wrapper .background-lady {
+      margin-top: 0px;
+      padding-top:0px;
+      background: url("/img/bk_lady.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+
+.content-wrapper .background-login {
+      margin-top: 0px;
+      padding-top:0px;
+      background: url("/img/bk_login.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+
+.content-wrapper .background-register {
+      margin-top: 0px;
+      padding-top:0px;
+      background: url("/img/bk_login.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+
+.content-wrapper .background-about {
+      margin-top: 0px;
+      padding-top:0px;
+      background: url("/img/bk_about.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-top: 150px;
+      padding-bottom: 150px;
+      background-color:rgba(255,255,255,0.6);
+      background-blend-mode: lighten;
+}
+
+.content-wrapper .background-contact {
+      margin-top: 0px;
+      padding-top:0px;
+      background: url("/img/bk_contact.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+
+
+
+/* --- Card Styles --- */
+.card-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: bold;
+}
+
+body .card.product-card {
+    position: relative;
+    height: 425px; 
+    background-color: #000 !important;
+    border: #000 solid 5px !important;
+    border-radius: 5px !important;
+    overflow: hidden; /* Clips the portrait image to the card shape */
+    transition: all 0.4s ease-in-out;
+    justify-content: center!important;
+}
+
+.card-cover-portrait {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2; /* Sits on top */
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out, transform 0.6s ease;
+}
+
+/* 3. The Content (Hidden by Default) */
+.card-reveal {
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Sits behind the cover */
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically in a column */
+    align-items: center;     /* Centers horizontally */
+}
+
+/* Hide the Portrait on Hover */
+.product-card:hover .card-cover {
+    opacity: 0;
+    pointer-events: none; /* Allows clicking the button underneath */
+    transform: scale(1.1); /* Subtle zoom out as it fades */
+}
+
+/* Show the Card Content on Hover */
+.product-card:hover .card-reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add a slight glow to the card on hover */
+.product-card:hover {
+    box-shadow: 0 0 20px rgba(230, 218, 114, 0.2); /* MK Time Gold Glow */
+    border-color: #333 !important;
+}
+
+.card-body {
+    /* height: 450px; */
+    background-color: #000000;
+    color:#E6DA72;
+    border: #000000 solid 5px;
+    border-radius: 0px;
+    top: 0;
+    left: 0;
+}
+
+.price {
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+/* Add to cart button */
+/* default state */
+.btn-add-to-cart {
+    background-color: #E6DA72 !important;
+    border: none;
+    color: #ffffff;
+    font-family: "Noto Serif", sans-serif;
+    font-weight: normal;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+/* hover and active state */
+.btn-add-to-cart:hover,
+.btn-add-to-cart:active {
+    background-color: #000000!important;
+    color: #ffffff!important;
+    border: 1px solid #E6DA72;
+}
+/* --- product card styles --- */
+
+.card-header {
+    font-weight: bold !important;
+    font-family: 'Petit Formal Script', cursive !important;
+    background-color: transparent !important;
+}
+
+
 /* remind myself !important is needed to override bootstrap's default styles */
 /* ---1. global settings--- */
 /* format of navbar items ---*/
@@ -18,10 +265,7 @@
     font-weight: normal !important;
     text-transform: uppercase; /* Optional: makes it look very clean and uniform */
     letter-spacing: 1px;       /* Optional: adds a bit of professional spacing */
-    padding-top: 15px !important;    /* Adjust these numbers to change navbar height */
-    padding-bottom: 15px !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+
     transition: all 0.3s ease;      /* Makes the color change smooth */
 }
 /* the color is not defined so 
@@ -49,12 +293,13 @@
 
 /* ---3. Specifically target the sale link --- */
 .nav-link.nav-sale {
-    color: red !important;
+    color: rgba(255, 0, 0, 0.733) !important;
+    text-shadow: 0px 0px 5px #ffffff !important; 
 }
 
 .nav-link.nav-sale:hover {
     color: #fff !important;         /* Text turns white --- */
-    background-color: red !important; /* Background turns red */
+    background-color: rgb(110, 13, 13) !important; /* Background turns red */
 }
 
 
